@@ -22,9 +22,10 @@ Class.forName("com.mysql.jdbc.Driver");
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/fb","root","");
 Statement stmt=con.createStatement();
 String em=request.getParameter("email");
-
+out.println("em");
 String pw=request.getParameter("password");
-stmt.executeUpdate("INSERT INTO `fbdata`(`email`, `password`) VALUES ('"+em+"','"+pw+"')");
+out.println("pw")
+
 
 
 
